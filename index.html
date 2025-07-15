@@ -2,108 +2,124 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Свадьба Аллы и Александра</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Georgia', serif;
-            background-color: #f9f6f2;
-            color: #2e2e2e;
-        }
-        header {
-            background: url('images/cover.jpg') center/cover no-repeat;
-            height: 100vh;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin: 0.5rem;
-        }
-        header p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 1rem auto;
-        }
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-        .block {
-            margin-bottom: 2rem;
-        }
-        .gallery img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 0.5rem;
-        }
-        .location img {
-            width: 100%;
-            max-width: 600px;
-            margin-top: 1rem;
-            border-radius: 8px;
-        }
-        a.button {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.7rem 1.5rem;
-            background-color: #a85d6a;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Александр и Алла — свадьба</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      background: url('bg.jpg') center/cover no-repeat fixed;
+      background-color: #111;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px 20px;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto 1.2em;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .section {
+      padding: 40px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .timeline, .location, .gifts, .gallery {
+      text-align: center;
+    }
+    .photos img, .location-photos img {
+      max-width: 100%;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .location a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #fff;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Алла & Александр</h1>
-        <p>Однажды мы встретились и с тех пор не расставались. Теперь мы хотим отпраздновать этот день вместе с вами!</p>
-    </header>
-
-    <section class="block">
-        <h2>Программа</h2>
-        <p>16:00 — Сбор гостей и коктейли</p>
-        <p>17:00 — Церемония</p>
-        <p>18:00 — Ужин</p>
-        <p>19:00 — Фото с молодыми</p>
-        <p>22:00 — Танцы до упаду</p>
+  <div class="overlay">
+    <section class="section intro">
+      <h1>Александр и Алла</h1>
+      <p>Когда мы впервые встретились, никто не знал, что это начало самой прекрасной истории. Сейчас мы хотим разделить с вами один из самых счастливых дней нашей жизни.</p>
+      <p>Мы приглашаем вас на нашу свадьбу 9 августа 2025 года ❤️</p>
     </section>
 
-    <section class="block">
-        <h2>Где остановиться?</h2>
-        <p>Пишите по <a href="https://t.me/kugaewscy">ссылке на телеграм</a> — подскажем ;)</p>
+    <section class="section timeline">
+      <h2>Расписание</h2>
+      <p>16:00 — Сбор гостей</p>
+      <p>17:00 — Церемония и банкет</p>
     </section>
 
-    <section class="block">
-        <h2>Пожелания по подаркам</h2>
-        <p>Ваше присутствие — лучший подарок,<br>но если вы хотите порадовать нас, мы будем благодарны конверту ❤️</p>
+    <section class="section location">
+      <h2>Локация</h2>
+      <p>Свадьба пройдет в <strong>зал «Saltanat Sarayi»</strong></p>
+      <div class="location-photos">
+        <img src="photo_1.jpg" alt="Зал" />
+        <img src="photo_2.jpg" alt="Интерьер" />
+        <img src="photo_3.jpg" alt="Лаунж" />
+        <img src="photo_4.jpg" alt="Беседка" />
+      </div>
+      <a href="https://go.2gis.com/UGpo8" target="_blank">Открыть в 2ГИС</a>
     </section>
 
-    <section class="block">
-        <h2>Фото и видео</h2>
-        <p>Будут доступны на этом сайте — заходите через неделю!</p>
+    <section class="section stay">
+      <h2>Где остановиться?</h2>
+      <p>Пишите по ссылке на телеграм ниже — подскажем ;)</p>
     </section>
 
-    <section class="block gallery">
-        <h2>Мы</h2>
-        <img src="images/photo1.jpg">
-        <img src="images/photo2.jpg">
-        <img src="images/photo3.jpg">
+    <section class="section gifts">
+      <h2>Пожелания по подаркам</h2>
+      <p>Ваше присутствие — лучший подарок, но если вы хотите порадовать нас, мы будем благодарны конверту ❤️</p>
     </section>
 
-    <section class="block location">
-        <h2>Локация</h2>
-        <p>Свадьба пройдёт по адресу:</p>
-        <p><strong>ул. Парижской Коммуны, 22</strong></p>
-        <a class="button" href="https://go.2gis.com/UGpo8" target="_blank">Открыть в 2GIS</a>
-        <img src="images/location.jpg" alt="Локация">
+    <section class="section gallery">
+      <h2>Немного нас</h2>
+      <div class="photos">
+        <img src="photo_a.jpg" alt="Мы 1" />
+        <img src="photo_b.jpg" alt="Мы 2" />
+        <img src="photo_c.jpg" alt="Мы 3" />
+        <img src="photo_d.jpg" alt="Мы 4" />
+        <img src="photo_e.jpg" alt="Мы 5" />
+        <img src="photo_f.jpg" alt="Мы 6" />
+        <img src="photo_g.jpg" alt="Мы 7" />
+        <img src="photo_h.jpg" alt="Мы 8" />
+      </div>
     </section>
+
+    <section class="section photos-after">
+      <h2>Фото и видео после свадьбы</h2>
+      <p>Будут доступны на этом сайте, заходите через неделю!</p>
+    </section>
+
+    <footer>
+      С любовью, Александр и Алла ❤️
+    </footer>
+  </div>
 </body>
 </html>
