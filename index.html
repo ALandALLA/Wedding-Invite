@@ -107,7 +107,73 @@
     }
   </style>
 </head>
-<body>
+
+<style>
+  body {
+    background-image: url('IMG_5073.JPG');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: brightness(0.4);
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 1s ease-in;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 5px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffffff20;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+
+  .button:hover {
+    background: #ffffff40;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+
+  .corner-decor::before, .corner-decor::after {
+    content: "🌸";
+    font-size: 32px;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .corner-decor::before {
+    top: 10px;
+    left: 10px;
+  }
+
+  .corner-decor::after {
+    bottom: 10px;
+    right: 10px;
+  }
+</style>
+<body class="corner-decor">
+
   <header>
     <h1>Александр и Алла</h1>
     <p>приглашают вас на свадьбу</p>
@@ -174,5 +240,26 @@
     setInterval(updateTimer, 1000);
     updateTimer();
   </script>
+
+<section class="section">
+  <h2>🏨 Где остановиться</h2>
+  <p>Пишите по ссылке на телеграм ниже — подскажем ;)</p>
+</section>
+
+<section class="section">
+  <h2>🎁 Подарки</h2>
+  <p>Ваше присутствие — лучший подарок. Но если вы хотите порадовать нас, мы будем благодарны конверту ❤️</p>
+</section>
+
+<section class="section">
+  <h2>📷 Фото и видео</h2>
+  <p>Фото и видео после свадьбы будут доступны на этом сайте — заходите через неделю!</p>
+</section>
+
+<section class="section">
+  <h2>🗓️ Добавить в календарь</h2>
+  <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Свадьба+Александр+и+Алла&dates=20250809T110000Z/20250809T200000Z&details=Сбор+в+16%3A00,+церемония,+ужин,+танцы+и+любовь&location=https://go.2gis.com/UGpo8" class="button" target="_blank">Добавить в Google Календарь</a>
+</section>
+
 </body>
 </html>
