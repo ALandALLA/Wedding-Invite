@@ -9,16 +9,17 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #fff8f8 0%, #fff0f5 100%);
-      background-attachment: fixed;
+      background-color: #fff8f8;
       color: #333;
+      position: relative;
+      z-index: 1;
     }
     body::before {
       content: "";
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background-image: url('https://www.transparenttextures.com/patterns/flowers.png');
-      opacity: 0.08;
+      background: url('flower_background_blur.jpg') center/cover no-repeat;
+      opacity: 0.35;
       z-index: 0;
     }
     header {
@@ -43,6 +44,10 @@
       margin: auto;
       position: relative;
       z-index: 1;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      margin-bottom: 40px;
     }
     .section h2 {
       font-family: 'Playfair Display', serif;
@@ -69,6 +74,8 @@
       text-align: center;
       margin: 40px 20px;
       font-size: 1.2em;
+      position: relative;
+      z-index: 1;
     }
     .btn {
       display: inline-block;
