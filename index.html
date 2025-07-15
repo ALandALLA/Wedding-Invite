@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба Александра и Аллы</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #333;
+            background-color: #fff;
+            background-image: url('collage_optimized.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 5vh;
+            border-radius: 12px;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 0.2em;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            font-weight: normal;
+            color: #777;
+        }
+        .info {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .info p {
+            margin: 6px 0;
+            font-size: 1.1em;
+        }
+        .timer {
+            text-align: center;
+            font-size: 2em;
+            margin: 30px 0;
+            color: #555;
+        }
+        .rsvp {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .rsvp a {
+            background-color: #e1cfcf;
+            padding: 12px 24px;
+            text-decoration: none;
+            color: #000;
+            border-radius: 6px;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Александр и Алла</h1>
+        <h2>приглашают вас на свадьбу</h2>
+
+        <div class="info">
+            <p><strong>Дата:</strong> 9 августа 2025 года</p>
+            <p><strong>Время:</strong> 16:00 — сбор гостей</p>
+            <p><strong>Место:</strong> <a href="https://go.2gis.com/UGpo8" target="_blank">Ссылка на локацию</a></p>
+        </div>
+
+        <div class="timer" id="countdown"></div>
+
+        <div class="rsvp">
+            <p>Пожалуйста, подтвердите своё участие:</p>
+            <a href="https://t.me/aleksandr_akashi" target="_blank">Написать в Telegram</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        С любовью, Александр и Алла 🤍
+    </div>
+
+    <script>
+        const weddingDate = new Date("2025-08-09T16:00:00+05:00").getTime();
+        const countdown = document.getElementById("countdown");
+
+        function updateTimer() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            if (distance < 0) {
+                countdown.innerHTML = "Свадьба уже состоялась!";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            countdown.innerHTML = `${days}д ${hours}ч ${minutes}м ${seconds}с`;
+        }
+
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+</body>
+</html>
